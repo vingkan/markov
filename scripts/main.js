@@ -9,6 +9,4 @@ var text = "I wanna be the very best Like no one ever was To catch them is my re
 var output = chain.generateString();
 	console.log(output);
 
-	console.log("PROBABILITIES:");
-var probabilities = chain.dump();
-	console.log(probabilities)
+var fs = require('fs');
