@@ -14,7 +14,7 @@ var output = chain.generateString();
 
 	document.write(output);
 
-/*var nlp = require('nlp_compromise');
+var nlp = require('nlp_compromise');
 
 var processed = nlp.pos(output).to_past().text();
-	console.log(processed);*/
+	console.log(processed);
