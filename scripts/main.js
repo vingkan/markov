@@ -12,4 +12,6 @@ var chain = new MarkovChain();
 var output = chain.generateString();
 	console.log(output);
 
+	document.write(output);
+
 	//node_modules/.bin/watchify

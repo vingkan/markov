@@ -22,7 +22,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify scripts/main.js -o bundle.js",
-    "watch": "watchify scripts/main.js -o bundle.js -dv",
+    "watch-js": "watchify scripts/main.js -o bundle.js -dv",
+    "watch-fs": "watchify -t brfs scripts/main.js -o bundle.js -dv",
+    "watch": "start cmd.exe & start cmd.exe /k npm run watch-js & npm run watch-fs",
     "launch": "python -m SimpleHTTPServer",
     "dev": "start cmd.exe & start cmd.exe /k npm run launch & npm run watch"
   },
