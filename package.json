@@ -16,6 +16,7 @@
     "brfs": "^1.4.1",
     "browserify-fs": "^1.0.0",
     "markovchain-generate": "^1.0.11",
+    "nlp_compromise": "^1.1.5",
     "watchify": "^3.6.1"
   },
   "main": "bundle.js",

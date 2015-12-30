@@ -14,4 +14,7 @@ var output = chain.generateString();
 
 	document.write(output);
 
-	//node_modules/.bin/watchify
+/*var nlp = require('nlp_compromise');
+
+var processed = nlp.pos(output).to_past().text();
+	console.log(processed);*/
