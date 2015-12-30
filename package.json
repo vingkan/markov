@@ -18,14 +18,14 @@
   "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify client/scripts/main.js -o client/bundle.js",
-    "watch": "node_modules/.bin/watchify client/scripts/main.js -o client/bundle.js --debug --verbose",
-    "launch": "node server.js",
+    "build": "browserify scripts/main.js -o bundle.js",
+    "watch": "node_modules/.bin/watchify scripts/main.js -o bundle.js --debug --verbose",
+    "launch": "python -m SimpleHTTPServer",
     "dev": "start cmd.exe & start cmd.exe /k npm run launch & npm run watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vingkan/omnipointment.git"
+    "url": "https://github.com/vingkan/markov.git"
   },
   "author": "Vinesh Kannan",
   "license": "ISC"
