@@ -9,4 +9,13 @@ var text = "I wanna be the very best Like no one ever was To catch them is my re
 var output = chain.generateString();
 	console.log(output);
 
-var fs = require('fs');
+var fs = require('browserify-fs');
+var path = require('path-browserify');
+
+var file = path.join(__dirname, 'pokemon.txt');
+fs.readFile(file, {encoding: 'utf-8'}, function(error, data){
+	if(error){
+		console.log("Something went horribly wrong: " + error);
+	}
+	console.log(data);
+});
